@@ -1,0 +1,87 @@
+.qoute {
+    padding: 50px;
+}
+
+.qoute .qoute-para {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.qoute .container {
+    background: rgb(41, 203, 211);
+    padding: 60px 25px;
+}
+
+.qoute .container .qoute-cont {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222;
+    position: relative;
+}
+
+.qoute .container .qoute-cont::before {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background: #FFF;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+.qoute .container .qoute-writer {
+    margin-top: 55px;
+    margin-bottom: -26px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.cont-name {
+    text-align: center;
+}
+
+.btnQoute {
+    background: black;
+    border: none;
+    color: rgb(50, 178, 161);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .qoute .container .qoute-cont {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .qoute .container .qoute-cont {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+    .qoute {
+        padding: 50px 20px;
+    }
+
+    .qoute .container .qoute-cont {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .qoute .container {
+        border-radius: 20px;
+    }
+}
