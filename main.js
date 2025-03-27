@@ -1,4 +1,4 @@
-const quotes = [
+const qoutes = [
     {
         qoute: "Be the change that you wish to see in the world",
         by: "Mahatma Gandhi"
@@ -21,21 +21,21 @@ let lastItem = -1;
 
 btn.addEventListener("click", () => {
 
-    let randomNumber = Math.floor(Math.random() * quotes.length);
+    let randomNumber = Math.floor(Math.random() * qoutes.length);
 
     console.log(randomNumber);
     
     while (randomNumber === lastItem) {
-        randomNumber = Math.floor(Math.random() * quotes.length);
+        randomNumber = Math.floor(Math.random() * qoutes.length);
         console.log("");
     }
 
 
     lastItem = randomNumber;
 
-    let newQoute = quotes[randomNumber].qoute;
+    let newQoute = qoutes[randomNumber].qoute;
     qoutePara.textContent = newQoute;
 
-    let newWriter = quotes[randomNumber].by;
+    let newWriter = qoutes[randomNumber].by;
     writer.textContent = newWriter;
 });
